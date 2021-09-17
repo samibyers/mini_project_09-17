@@ -1,11 +1,86 @@
 :root {
+    
     --light: white;
-    --dark: purple;
-    --gradient: rgba(232, 102, 236, 0.3) 0%,
-                rgba(232, 102, 236, 0.6) 100%
-    --title border: border-radius: 5px;
-    --
+    --dark: rgb(232, 102, 236);
+    --transition: linear-gradient: (rgba(232, 102, 236, 0.3) 0%,rgba(232, 102, 236, 0.6) 100%);
+    --border: 5px;
 }
 body {
-   
+   font-family: Arial, Helvetica, sans-serif;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   justify-content: flex-start;
+   background-color: #222831;
 }
+
+header h1{
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px;
+    color: var(--dark);
+    font-size: 200%;
+    padding: 20px;
+}
+
+header p {
+    color: var(--light);
+    text-align: center;
+    font-size: 100%;
+    padding: 20px;
+}
+
+main div {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+div {
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    margin: 20px auto;
+}
+
+div h2 {
+    position:relative;
+    z-index: 2;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: white;
+    padding: 10px;
+    flex: 0 0 300px;
+    margin: 20px;
+    position: relative;
+    margin-top: -20px;
+    color: var(--dark);
+  }
+
+  div p {
+      color: var(--dark);
+  }
+.card {
+    border-style: dashed;
+    border-width: 1px;
+    border-radius: 1px;
+    border-color: white;
+    padding: 10px;
+    flex: 0 0 300px;
+    margin: 20px;
+  }
+
+.card pre {
+    color: var(--light)
+}
+ 
+
+  
+  
+
+
